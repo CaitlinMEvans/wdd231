@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="This is a page for WDD 231 - Web Development I which I (Caitlin Evans) have already completed for CIT260.... "
+    />
+    <meta name="author" content="Caitlin Evans" />
+    <title>WDD 231 - Web Development I | Caitlin Evans</title>
+    <!-- GOOGLE FONTS PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.jpeg" sizes="16x16" type="image/jpeg" />
+
+    <link rel="stylesheet" href="styles/index.css" media="screen" />
+    <!-- <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/course-list-array.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div id="bio">
+        <img
+          src="images/profile.png"
+          alt="Picture of me"
+          width="100"
+          loading="lazy"
+        />
+        <h1>Caitlin Evans</h1>
+      </div>
+      <button title="Hamburger Menu Button" id="menu"></button>
+      <nav id="animateme">
+        <ul class="menuLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="chamber/index.html">Chamber</a></li>
+          <li><a href="https://www.github.com">Github Profile</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="coursework">
+          <h2>Course Work</h2>
+          <ul id="courses"></ul>
+        </section>
+        <section class="location">
+          <h2>Provo Utah</h2>
+          <p>My favorite Temple is the Payson Temple.</p>
+          <figure>
+            <img
+              src="images/payson-temple.jpg"
+              alt="Picture of the Payson Utah Temple"
+              width="300"
+              height="225"
+            />
+            <figcaption>Payson Temple</figcaption>
+          </figure>
+          <p>provo Conditions: <span id="current-temp"></span></p>
+          <p id="conditions"></p>
+          <img id="weather-icon" src="" alt="Weather Icon" />
+        </section>
+      </div>
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div id="credits"></div>
+        <div id="completed-credits"></div>
+        <div class="filter">
+          <button id="all">All Courses</button>
+          <button id="cse">CSE Courses</button>
+          <button id="wdd">WDD Courses</button>
+        </div>
+        <div id="course-displays"></div>
+        <dialog id="course-details">
+          <detail></detail>
+        </dialog>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-p">
+        <p>
+          ©<span id="currentyear"></span> | 🌺 Caitlin Evans 🌺 | Provo Utah
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+:root {
+    --primary-color: #023047;
+    --secondary-color: #FFB703;
+
+    --heading-font: "Oswald", sans-serif;
+    --paragraph-font: "Lora", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    /* padding: 10px; */
+}
+header h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 20px;
+}
+header img {
+    display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer img {
+    padding: 10px;
+}
+#bio {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    align-items: center;
+}
+#menu {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: -3px;
+    right: 1rem;
+    font-size: 50px;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+    color: white;
+}
+#menu.open::before {
+    content: "x";
+    color: white;
+}
+.menuLinks {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+.menuLinks a, li {
+    list-style: none;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.menuLinks a:hover {
+    background-color: #4f4a42;
+    color: #f9fdc4;
+    font-weight: 700;
+}
+.menuLinks .active {
+    color: #cbfdc4;
+}
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.open {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+main {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+section {
+    margin: 0 auto;
+    padding: 1rem;
+    border: solid 1px #4f4a42;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    max-width: 400px;
+}
+h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+    padding: 13px;
+}
+figure {
+    /* margin: 0 auto; */
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color: rgb(97, 97, 97);
+    padding: .5rem;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+}
+figcaption {
+    padding-top: 15px;
+    font-size: 14px;
+}
+#courses {
+    margin: 0 auto;
+    padding: 10px;
+}
+#courses li {
+    background-color: var(--secondary-color);
+    color: rgb(246, 246, 246);
+    padding: 7px;
+    margin-top: 0.5rem;
+    border-radius: 3px;
+}
+.location {
+    text-align: center;
+}
+.credit-list {
+    color: white;
+    font-style: italic;
+    font-size: 14px;
+}
+#course-displays {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+#course-displays section {
+    background-color: var(--secondary-color);
+}
+section #completed {
+    background-color: var(--primary-color);
+}
+#credits, #completed-credits {
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: solid 1px;
+    padding-bottom: 7px;
+}
+.filter button {
+    padding: 10px;
+    margin: 3px;
+    font-size: 15px;
+    color: white;
+    background-color: darkslategrey;
+    border-radius: 5px;
+}
+.navigation .active {
+    color: rgb(189, 255, 184);
+}
+#course-details {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: 0 0 1em gray;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: 0.5s alternate slide-in;
+}
+#course-details::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+detail h2, detail h3, detail p {
+    padding: 8px;
+}
+dialog button {
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    padding: .4rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 0 150vw;
+        scale: 200% 1;
+    }
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav {
+        grid-template-rows: 1fr;
+    }
+    main, section {
+        max-width: 1000px;
+    }
+     .container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 20px;
+     }
+    .coursework {
+        width: 95%;
+    }
+    section #certificate {
+        max-width: 1000px;
+    }
+    #course-displays {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
+    }
+    #course-displays section {
+        width: 200px;
+    }
+}
