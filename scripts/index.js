@@ -200,7 +200,7 @@ const currentTemp = document.querySelector("#current-temp");
 const image = document.querySelector("#weather-icon");
 const weatherConditions = document.querySelector("#conditions");
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=37.80&lon=-122.27&appid=499d17cb2fcb9bce311b043aee09342e&units=imperial'
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=40.2338&lon=-111.6585&appid=499d17cb2fcb9bce311b043aee09342e&units=imperial';
 
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp} F`;
