@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Modules Page for classes break down " />
+    <meta name="author" content="Caitlin Evans" />
+    <title>WDD 231 - Web Development I | Modules</title>
+    <!-- GOOGLE FONTS PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.jpeg" sizes="16x16" type="image/jpeg" />
+
+    <link rel="stylesheet" href="styles/index.css" media="screen" />
+    <script defer src="scripts/modules.js" type="module"></script>
+  </head>
+  <body>
+    <h1 id="courseName"></h1>
+    <h2 id="courseCode"></h2>
+    <label for="sectionNumber">Section Number</label>
+    <input id="sectionNumber" />
+    <button id="enrollStudent">Enroll Student</button>
+    <button id="dropStudent">Drop Student</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Section#</th>
+          <th>Room#</th>
+          <th>#Enrolled</th>
+          <th>Days</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody id="sections"></tbody>
+    </table>
+  </body>
+</html>

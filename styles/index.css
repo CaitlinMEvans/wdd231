@@ -67,7 +67,7 @@ footer img {
 }
 .menuLinks {
     background-color: var(--secondary-color);
-    color: white;
+    color: #000;
     font-family: var(--paragraph-font);
     font-size: 18px;
 }
@@ -76,15 +76,16 @@ footer img {
     padding: .75rem;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #000;
+    font-weight: bold;
 }
 .menuLinks a:hover {
-    background-color: #4f4a42;
-    color: #f9fdc4;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 700;
 }
 .menuLinks .active {
-    color: #cbfdc4;
+    color: var(--primary-color);
 }
 nav {
     display: grid;
@@ -139,7 +140,7 @@ figcaption {
 }
 #courses li {
     background-color: var(--secondary-color);
-    color: rgb(246, 246, 246);
+    color: #000;
     padding: 7px;
     margin-top: 0.5rem;
     border-radius: 3px;
@@ -148,7 +149,7 @@ figcaption {
     text-align: center;
 }
 .credit-list {
-    color: white;
+    color: #000;
     font-style: italic;
     font-size: 14px;
 }
@@ -159,13 +160,15 @@ figcaption {
 }
 #course-displays section {
     background-color: var(--secondary-color);
+    color: #000;
 }
 section #completed {
     background-color: var(--primary-color);
+    color: #FFF;
 }
 #credits, #completed-credits {
     text-align: center;
-    color: white;
+    color: #000;
     background-color: var(--secondary-color);
     padding: 10px;
     margin-top: 10px;
@@ -182,12 +185,13 @@ section #completed {
     padding: 10px;
     margin: 3px;
     font-size: 15px;
-    color: white;
-    background-color: darkslategrey;
+    color: #000;
+    background-color: #888;
     border-radius: 5px;
 }
 .navigation .active {
-    color: rgb(189, 255, 184);
+    color:  var(--primary-color);
+    text-decoration: underline;
 }
 #course-details {
     padding: 1rem;
