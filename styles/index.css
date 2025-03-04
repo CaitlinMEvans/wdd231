@@ -225,7 +225,7 @@ dialog button {
     border-radius: 5px;
 }
 
-@keyframes slide-in {
+/* @keyframes slide-in {
     from {
         translate: 0 150vw;
         scale: 200% 1;
@@ -234,7 +234,7 @@ dialog button {
         translate: 0 0;
         scale: 100% 1;
     }
-}
+} */
 
 @media screen and (min-width: 800px) {
     #menu {
