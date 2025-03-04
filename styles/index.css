@@ -183,10 +183,15 @@ section #completed {
 }
 .filter button {
     padding: 10px;
-    margin: 3px;
-    font-size: 15px;
+    margin: 6px;
+    font-size: 1rem;
     color: #000;
     border-radius: 5px;
+}
+.filter button:active {
+    background-color: #023047;
+    color: #fff;
+    text-decoration: underline;
 }
 .navigation .active {
     color:  var(--primary-color);
