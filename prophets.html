@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Latter-Day Saint Prophets Page and Filter"
+    />
+    <meta name="author" content="Caitlin Evans" />
+    <title>WDD 231 - Web Development I | Caitlin Evans</title>
+    <!-- GOOGLE FONTS PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo.jpeg" sizes="16x16" type="image/jpeg" />
+
+    <link rel="stylesheet" href="styles/prophets.css" media="screen" />
+    <script defer src="scripts/prophets.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Latter-day Saint Prophets</h1>
+    </header>
+    <main>
+      <div class="filter">
+        <button id="all">All</button>
+        <button id="utah">Born in Utah</button>
+        <button id="us">Born outside US</button>
+        <button id="age">Lived 95+ years</button>
+        <button id="kids">More than 10 Children</button>
+        <button id="served">Served 15+ years as Prophet</button>
+      </div>
+      <div id="cards"></div>
+    </main>
+    <footer>
+      <div class="footer-p">
+        <p>©<span id="currentyear"></span> 🌺 Caitlin Evans 🌺 Provo Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
