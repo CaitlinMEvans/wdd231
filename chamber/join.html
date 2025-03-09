@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <!-- <link rel="stylesheet" href="styles/base.css" /> -->
+    <!-- GOOGLE FONTS PRECONNECT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400&family=PT+Sans:wght@400;700&family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script type="module" src="scripts/cards.mjs"></script> -->
+    <script src="scripts/join.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- TODO Favicon -->
+    <!-- <link rel="icon" href="images/chicken.ico" /> -->
+    <meta
+      name="description"
+      content="Caitlin Evans WDD231 - Chamber Join Us Page"
+    />
+    <meta name="author" content="Caitlin Evans" />
+
+    <meta property="og:title" content="Provo Chamber Join Us Page" />
+    <meta
+      property="og:description"
+      content="Caitlin Evans's WDD231 Chamber of Commerce Directory Page"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://CaitlinMEvans.github.io/wdd231/chamber/images/provo_logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://CaitlinMEvans.github.io/wdd231/chamber/directory.html"
+    />
+
+    <meta name="twitter:card" content="summary" />
+
+    <title>Provo Chamber of Commerce Directory Page</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/provo_logo.png" alt="Provo Logo" loading="lazy" />
+        <div id="location-title">
+          <h1>Provo</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <button title="Hamburger Menu Button" id="menu"></button>
+      <nav id="animateme">
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discovery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="chamber-form">
+        <h2>Join the Chamber of Commerce!</h2>
+        <form
+          method="get"
+          action="thankyou.html"
+          enctype="text/plain"
+          class="wf1"
+        >
+          <label
+            >First Name<input
+              type="text"
+              name="fname"
+              required
+              autocomplete="given-name"
+              title="First Name"
+          /></label>
+          <label
+            >Last Name<input
+              type="text"
+              name="lname"
+              required
+              autocomplete="family-name"
+              title="Last Name"
+          /></label>
+          <label
+            >Organizational Title<input
+              type="text"
+              name="orgname"
+              autocomplete="organization-title"
+              title="Organizational Title"
+          /></label>
+          <label
+            >Email<input
+              type="email"
+              name="email"
+              placeholder="someone@domain.com"
+              required
+              title="Email"
+              autocomplete="email"
+          /></label>
+          <label
+            >Phone<input
+              type="tel"
+              name="phone"
+              title="Phone Number"
+              autocomplete="tel"
+              required
+          /></label>
+          <label
+            >Business Name<input
+              type="text"
+              required
+              name="business"
+              title="Business Name"
+              autocomplete="organization"
+          /></label>
+          <label
+            >Membership Level
+            <select name="membership" required>
+              <option value="" disabled selected>Please Select...</option>
+              <option value="nonpro">Non Profit Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label
+            >Describe Your Business:
+            <textarea
+              name="description"
+              title="Description of Business"
+              id="description-of-business"
+              rows="5"
+              required
+            ></textarea>
+          </label>
+          <input
+            type="hidden"
+            name="fecha"
+            id="date-and-time"
+            title="Timestamp"
+            value=""
+          />
+          <input type="submit" id="submit" value="Apply for Membership" />
+        </form>
+      </div>
+      <div class="membership-levels">
+        <h2>Membership Levels</h2>
+        <section class="animation">
+          <h3 id="non-profit">Non Profit Membership</h3>
+        </section>
+        <section class="animation">
+          <h3 id="bronze">Bronze Membership</h3>
+        </section>
+        <section class="animation">
+          <h3 id="silver">Silver Membership</h3>
+        </section>
+        <section class="animation">
+          <h3 id="gold">Gold Membership</h3>
+        </section>
+      </div>
+      <dialog id="membership-dialog"></dialog>
+    </main>
+    <footer>
+      <div class="bottom">
+        <div id="contact-footer">
+          <h2>Provo Chamber of Commerce</h2>
+          <p>123 Cougar Drive</p>
+          <p>Provo, Utah 84606</p>
+          <p>cityclerk@cityofProvo.org</p>
+          <p>(801) 123-4567</p>
+        </div>
+        <div id="social">
+          <nav class="social-links">
+            <a href="https://twitter.com">
+              <img
+                src="images/twitter.webp"
+                alt="Twitter Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img
+                src="images/facebook.webp"
+                alt="Facebook Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/">
+              <img
+                src="images/youtube.webp"
+                alt="Youtube Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+          </nav>
+        </div>
+        <div id="bens-info">
+          <p>WDD231 Commerce Class Project</p>
+          <p>Caitlin Evans</p>
+          <p>©<span id="currentyear"></span> Provo Chamber of Commerce</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

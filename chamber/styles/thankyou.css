@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #007EB0 ;
+    --secondary-color: #428111;
+    --dark-blue: #023047;
+    --yellow: #FFB703;
+    --green: #606C38;
+    --blue: #219EBC;
+    --orange: #FB8500;
+    --dark-green: #283618;
+
+    --heading-font: "Delius", sans-serif;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+}
+header {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+    font-family: 'Oswald', sans-serif;
+}
+
+header h1 {
+    font-size: 2em;
+}
+/* 
+#logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+#location-title {
+    padding: 10px;
+} */
+
+#menu {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: -3px;
+    right: 1rem;
+    font-size: 50px;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+    color: white;
+}
+#menu.open::before {
+    content: "x";
+    color: white;
+}
+.menuLinks {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+.menuLinks a, li {
+    list-style: none;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.menuLinks a:hover {
+    background-color: var(--orange);
+    color: #000;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.open {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+main {
+    text-align: center;
+}
+h2 {
+    padding: 20px;
+    font-size: 35px;
+}
+p {
+    padding: 8px;
+}
+#results {
+    border: solid 1px black;
+    max-width: 600px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+footer {
+    /* width: 100%; */
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-links {
+    display: block;
+}
+
+footer h2 {
+    font-size: 18px;
+}
+
+footer div {
+    padding-bottom: 15px;
+}
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    .bottom {
+        display: flex;
+    }
+
+    .bottom div {
+        padding: 20px;
+    }
+}
