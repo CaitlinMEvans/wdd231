@@ -40,3 +40,10 @@ showInfo.innerHTML = `
 <p><strong>Business Name:</strong> ${show('business')}
 <p><strong>Description:</strong> ${show('description')}
 <p><strong>Date Submitted: </strong> ${show('fecha')}`
+
+// Clear form data after successful submission to prevent resubmission
+window.onload = function() {
+    if (performance.navigation.type === 1) {
+        window.location.href = "join.html"; // Redirect to avoid duplicate submissions
+    }
+};

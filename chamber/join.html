@@ -62,7 +62,6 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <div class="chamber-form">
         <h2>Join the Chamber of Commerce!</h2>
@@ -95,25 +94,28 @@
               autocomplete="organization-title"
               title="Organizational Title"
           /></label>
-          <label
-            >Email<input
+          <label>
+            Email Address<input
               type="email"
               name="email"
-              placeholder="someone@domain.com"
               required
-              title="Email"
-              autocomplete="email"
-          /></label>
-          <label
-            >Phone<input
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Enter a valid email address (example@domain.com)"
+            />
+          </label>
+          <label>
+            Phone Number<input
               type="tel"
               name="phone"
-              title="Phone Number"
-              autocomplete="tel"
               required
-          /></label>
+              pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+              title="Format: 801-555-1234 or (801) 555-1234"
+              autocomplete="tel"
+            />
+          </label>
           <label
-            >Business Name<input
+            >Business Name
+            <input
               type="text"
               required
               name="business"

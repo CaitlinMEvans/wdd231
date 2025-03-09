@@ -111,12 +111,12 @@ h3 {
     padding: 15px;
     max-width: 300px;
     color: white;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
 }
 
 .membership-levels section:hover {
-    background-color: #374947;
+    background-color: var(--dark-blue);
 }
 
 form {
@@ -148,7 +148,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #164d6f;
+    background-color: var(--dark-blue);
+    text-decoration: underline;
 }
 
 :required {
