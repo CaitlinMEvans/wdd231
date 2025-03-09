@@ -1,4 +1,6 @@
 :root {
+    --primary-color: #007EB0 ;
+    --secondary-color: #428111;
     --dark-blue: #023047;
     --yellow: #FFB703;
     --green: #606C38;
@@ -65,7 +67,7 @@ header h1 {
 header nav {
     display: flex;
     justify-content: center;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--blue); */
     padding: var(--nav-padding);
 }
 

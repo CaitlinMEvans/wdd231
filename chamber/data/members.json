@@ -1,0 +1,75 @@
+{
+    "businesses": [
+        {
+            "name": "Cougar Cream & Co.",
+            "address": "123 Center St",
+            "city": "Provo, UT 84601",
+            "phone": "(801) 555-1234",
+            "website": "https://www.cougarcicecreamprovo.com",
+            "image": "images/cougarcream.webp",
+            "width": 100,
+            "membership": 3
+        },
+        {
+            "name": "Pioneer Family Dental",
+            "address": "456 University Ave",
+            "city": "Provo, UT 84604",
+            "phone": "(801) 555-5678",
+            "website": "https://www.pioneerdental.com",
+            "image": "images/pioneerdental.webp",
+            "height": 100,
+            "membership": 2
+        },
+        {
+            "name": "Utah Valley Tech Solutions",
+            "address": "789 Startup Way",
+            "city": "Provo, UT 84606",
+            "phone": "(801) 555-8765",
+            "website": "https://www.uvtechsolutions.com",
+            "image": "images/uvtech.webp",
+            "height": 100,
+            "membership": 2
+        },
+        {
+            "name": "BYU Bookstore & Supplies",
+            "address": "2100 N Canyon Rd",
+            "city": "Provo, UT 84602",
+            "phone": "(801) 555-9876",
+            "website": "https://www.byubookstore.com",
+            "image": "images/byubookstore.webp",
+            "height": 100,
+            "membership": 2
+        },
+        {
+            "name": "Mountain View Credit Union",
+            "address": "135 State St",
+            "city": "Provo, UT 84601",
+            "phone": "(801) 555-2468",
+            "website": "https://www.mountainviewcu.com",
+            "image": "images/mountainviewcu.webp",
+            "height": 100,
+
+            "membership": 3
+        },
+        {
+            "name": "Provo Cinemas",
+            "address": "567 W Center St",
+            "city": "Provo, UT 84601",
+            "phone": "(801) 555-1111",
+            "website": "https://www.provocinemas.com",
+            "image": "images/provocinemas.webp",
+            "height": 100,
+            "membership": 3
+        },
+        {
+            "name": "Faith & Family Counseling",
+            "address": "876 Freedom Blvd",
+            "city": "Provo, UT 84604",
+            "phone": "(801) 555-7890",
+            "website": "https://www.faithfamilycounseling.com",
+            "image": "images/faithfamily.webp",
+            "height": 100,
+            "membership": 1
+        }
+    ]
+}

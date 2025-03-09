@@ -1,0 +1,28 @@
+{
+    "tiers": [
+        {
+            "title": "Non-Profit",
+            "cost": 0,
+            "benefits": "Access to basic events and trainings.",
+            "conditions": "Company must be a non-profit organization to qualify for this tier."
+        },
+        {
+            "title": "Bronze",
+            "cost": 25,
+            "benefits": "Access to basic events and trainings. Basic advertising and a card on the website.",
+            "conditions": "No conditions. Any local company can join."
+        },
+        {
+            "title": "Silver",
+            "cost": 250,
+            "benefits": "Access to events, trainings, social gatherings and more. Advanced advertising, networking, and more opportunities to engage with the community as a whole.",
+            "conditions": "Company must have at least 20 full time employees."
+        },
+        {
+            "title": "Gold",
+            "cost": 700,
+            "benefits": "All of the benefits of Silver and below, as well as business health packages, strong advertising at both chamber of commerce gatherings and public events, and more.",
+            "conditions": "Company must have at least 100 full time employees."
+        }
+    ]
+}
