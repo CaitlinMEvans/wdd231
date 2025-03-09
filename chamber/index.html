@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/home.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Caitlin Evans WDD231 - Chamber Directory Page"
+    />
+    <meta name="author" content="Caitlin Evans" />
+
+    <meta property="og:title" content="provo Chamber Directory Page" />
+    <meta
+      property="og:description"
+      content="Caitlin Evans's WDD231 Chamber of Commerce Directory Page"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://CaitlinMEvans.github.io/wdd231/chamber/images/provo_logo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://CaitlinMEvans.github.io/wdd231/chamber/directory.html"
+    />
+
+    <meta name="twitter:card" content="summary" />
+
+    <title>Provo Chamber of Commerce Directory Page</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="images/provo_logo.png" alt="Provo Logo" loading="lazy" />
+        <div id="location-title">
+          <h1>Provo</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <button title="Hamburger Menu Button" id="menu"></button>
+      <nav id="animateme">
+        <ul class="menuLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discovery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="hero">
+        <picture>
+          <source
+            srcset="/chamber/images/hero-large.webp.webp"
+            alt="Provo Temple"
+            media="(min-width: 600px)"
+            width="1200"
+          />
+          <img
+            src="/chamber/images/hero.webp.webp"
+            alt="Provo Temple"
+            width="600"
+          />
+        </picture>
+        <a href="join.html" id="call-to-action">Join Us!</a>
+      </div>
+      <h2 class="header-h2">Home</h2>
+      <div id="summary">
+        <section id="events">
+          <h3>Events</h3>
+          <ul>
+            <li>
+              <strong
+                >Provo Airport: Soaring to New Heights with Record Growth
+              </strong>
+              - <strong>Provo Airport (PVU) </strong> achieved record growth in
+              2024 with 900K passengers, expanded services from Allegiant,
+              Breeze, and American Airlines. The "Anywhere You Want to Go, Fly
+              Provo" campaign urges community support to sustain its upward
+              trajectory.
+            </li>
+            <li>
+              <strong>City Council Meeting</strong>
+              <strong>March 11, 2025</strong> Time dedicated to the public from
+              5:30 PM  to  8:00 PM at the City Hall Council Chambers
+            </li>
+            <li>
+              <strong>Barefoot in the Park</strong> -
+              <strong
+                >March 8, 2025, 7:30 PM - 9:30 PM @ Brinton Black Box
+                Theater</strong
+              >
+              Neil Simon's hilarious story of a newlywed couple learning how to
+              love each other...and the mother and neighbor they can't ignore! A
+              hilarious romantic comedy.
+            </li>
+          </ul>
+        </section>
+        <section id="weather">
+          <h3>Current Weather</h3>
+          <div id="weather-wrapper">
+            <div id="weather-icon"></div>
+            <div id="weather-conditions">
+              <p id="current-temp"></p>
+              <p id="condition"></p>
+              <p id="high-temp"></p>
+              <p id="low-temp"></p>
+              <p id="humidity"></p>
+              <p id="sunrise"></p>
+              <p id="sunset"></p>
+            </div>
+          </div>
+        </section>
+        <section id="forecast">
+          <h3>Weather Forecast</h3>
+          <div id="weather-forecast">
+            <p>Today: <span id="today-forecast"></span></p>
+            <p>
+              <span id="tomorrow"></span>: <span id="tomorrow-forecast"></span>
+            </p>
+            <p>
+              <span id="two-day"></span>: <span id="two-day-forecast"></span>
+            </p>
+          </div>
+        </section>
+      </div>
+      <div id="cards"></div>
+    </main>
+    <footer>
+      <div class="bottom">
+        <div id="contact-footer">
+          <h2>Provo Chamber of Commerce</h2>
+          <p>123 Cougar Drive</p>
+          <p>Provo, Utah 84606</p>
+          <p>cityclerk@cityofProvo.org</p>
+          <p>(801) 123-4567</p>
+        </div>
+        <div id="social">
+          <nav class="social-links">
+            <a href="https://twitter.com">
+              <img
+                src="images/twitter.webp"
+                alt="Twitter Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img
+                src="images/facebook.webp"
+                alt="Facebook Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/">
+              <img
+                src="images/youtube.webp"
+                alt="Youtube Icon"
+                width="48"
+                height="48"
+                loading="lazy"
+              />
+            </a>
+          </nav>
+        </div>
+        <div id="bens-info">
+          <p>WDD231 Commerce Class Project</p>
+          <p>Caitlin Evans</p>
+          <p>©<span id="currentyear"></span> Provo Chamber of Commerce</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
