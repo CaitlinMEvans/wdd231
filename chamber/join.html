@@ -88,19 +88,24 @@
               title="Last Name"
           /></label>
           <label
-            >Organizational Title<input
+            >Organizational Title
+            <input
               type="text"
               name="orgname"
               autocomplete="organization-title"
-              title="Organizational Title"
-          /></label>
+              pattern="^[a-zA-Z\s\-]{7,}$"
+              title="Enter a valid title (at least 7 letters, hyphens, or spaces)"
+            />
+          </label>
           <label>
             Email Address<input
               type="email"
               name="email"
               required
+              autocomplete="email"
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              title="Enter a valid email address (example@domain.com)"
+              title="Enter a valid email address"
+              placeholder="YourEmailAddress@domainName.com"
             />
           </label>
           <label>
@@ -125,11 +130,13 @@
           <label
             >Membership Level
             <select name="membership" required>
-              <option value="" disabled selected>Please Select...</option>
-              <option value="nonpro">Non Profit Membership</option>
-              <option value="bronze">Bronze Membership</option>
-              <option value="silver">Silver Membership</option>
-              <option value="gold">Gold Membership</option>
+              <option value="" disabled selected>
+                Select a Membership Level...
+              </option>
+              <option value="nonpro">Non-Profit (No Fee)</option>
+              <option value="bronze">Bronze ($100/yr - Basic Benefits)</option>
+              <option value="silver">Silver ($250/yr - More Benefits)</option>
+              <option value="gold">Gold ($500/yr - VIP Benefits)</option>
             </select>
           </label>
           <label
@@ -149,25 +156,65 @@
             title="Timestamp"
             value=""
           />
-          <input type="submit" id="submit" value="Apply for Membership" />
+          <input type="submit" value="Submit Membership Application" />
         </form>
       </div>
       <div class="membership-levels">
         <h2>Membership Levels</h2>
-        <section class="animation">
-          <h3 id="non-profit">Non Profit Membership</h3>
+
+        <section
+          class="animation membership-card"
+          id="non-profit"
+          tabindex="0"
+          role="button"
+          aria-label="Non-Profit Membership"
+        >
+          <h3>Non-Profit Membership</h3>
+          <p>No fee for non-profit organizations.</p>
+          <button class="learn-more" data-level="non-profit">Learn More</button>
         </section>
-        <section class="animation">
-          <h3 id="bronze">Bronze Membership</h3>
+
+        <section
+          class="animation membership-card"
+          id="bronze"
+          tabindex="0"
+          role="button"
+          aria-label="Bronze Membership"
+        >
+          <h3>Bronze Membership</h3>
+          <p>Basic membership with essential benefits.</p>
+          <button class="learn-more" data-level="bronze">Learn More</button>
         </section>
-        <section class="animation">
-          <h3 id="silver">Silver Membership</h3>
+
+        <section
+          class="animation membership-card"
+          id="silver"
+          tabindex="0"
+          role="button"
+          aria-label="Silver Membership"
+        >
+          <h3>Silver Membership</h3>
+          <p>Expanded benefits and business exposure.</p>
+          <button class="learn-more" data-level="silver">Learn More</button>
         </section>
-        <section class="animation">
-          <h3 id="gold">Gold Membership</h3>
+
+        <section
+          class="animation membership-card"
+          id="gold"
+          tabindex="0"
+          role="button"
+          aria-label="Gold Membership"
+        >
+          <h3>Gold Membership</h3>
+          <p>Premium features and top-tier exposure.</p>
+          <button class="learn-more" data-level="gold">Learn More</button>
         </section>
       </div>
-      <dialog id="membership-dialog"></dialog>
+
+      <!-- MODAL DIALOG -->
+      <dialog id="membership-dialog" aria-labelledby="membership-title">
+        <div id="membership-content"></div>
+      </dialog>
     </main>
     <footer>
       <div class="bottom">
