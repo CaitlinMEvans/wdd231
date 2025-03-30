@@ -225,6 +225,125 @@ dialog button {
     font-size: 20px;
     border-radius: 5px;
 }
+
+#events h3, #weather h3, #forecast h3, .adverts h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+}
+#cards {
+    border-top: solid 1px;
+    margin: 10px;
+}
+#business-cards {
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    max-width: 400px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#business-cards p, #business-cards a {
+    padding: 3px;
+    text-decoration: none;
+}
+#business-cards img {
+    background-color: white;
+}
+figure {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+}
+figcaption, .adverts p {
+    padding: 8px;
+    font-size: 16px;
+}
+.discover-column {
+    text-align: center;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+#visits {
+    text-align: center;
+    border-top: solid 1px black;
+    margin: 8px;
+    padding: 5px;
+}
+.discover-header {
+    text-align: center;
+}
+.adverts a {
+    font-size: 12px;
+    padding: 8px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.adverts {
+    text-align: left;
+    max-width: 450px;    
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    margin: 15px auto;
+}
+
+.adverts ul li{
+    list-style: none;
+    padding: 1em;
+}
+
+
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav {
+        grid-template-rows: 1fr;
+    }
+    .bottom {
+        display: flex;
+    }
+    .bottom div {
+        padding: 20px;
+    }
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    }
+    #cards section {
+        width: 100%;
+    }
+    #summary {
+        display: grid;
+        grid-template-columns: 600px repeat(auto-fit, minmax(350px, 2fr))
+    }
+    .discover-column img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 30px gray;
+    }
+    .discover-column img {
+        transition: all .1s ease-in-out;
+    }
+    #discovery-page {
+        display: grid;
+        grid-template-columns: 600px auto;
+        justify-content: center;
+    }
+}
 @keyframes slide-side {
     from {
         transform: translate(150vw);
