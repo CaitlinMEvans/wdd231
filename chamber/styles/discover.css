@@ -16,7 +16,73 @@
     padding: 0;
     font-family: var(--paragraph-font);
 }
+#menu {
+    font-size: 1rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: -3px;
+    right: 1rem;
+    font-size: 50px;
+    cursor: pointer;
+}
+#menu::before {
+    content: "☰";
+    color: white;
+}
+#menu.open::before {
+    content: "x";
+    color: white;
+}
+.menuLinks {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+}
+.menuLinks a, li {
+    list-style: none;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.menuLinks a:hover {
+    background-color: var(--orange);
+    color: #000;
+}
 
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+nav ul {
+    overflow: hidden;
+}
+nav.open {
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+@media screen and (min-width: 800px) {
+    nav ul {
+        display: flex
+;
+        justify-content: flex-end;
+    }
+}
+nav ul {
+    overflow: hidden;
+}
+
+.header-h2 {
+    padding-left: 10px;
+}
+h2 {
+    font-size: 40px;
+    /* padding-left: 10px; */
+}
 #events h3, #weather h3, #forecast h3, .adverts h3 {
     background-color: var(--secondary-color);
     color: white;
