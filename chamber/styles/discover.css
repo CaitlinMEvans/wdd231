@@ -94,6 +94,10 @@ figure img {
     margin: 15px auto;
 }
 
+.adverts ul li{
+    list-style: none;
+}
+
 
 @media screen and (min-width: 800px) {
     #menu {
