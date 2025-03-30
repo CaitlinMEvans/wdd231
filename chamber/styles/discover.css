@@ -1,3 +1,22 @@
+:root {
+    --primary-color: #007EB0 ;
+    --secondary-color: #428111;
+    --dark-blue: #023047;
+    --yellow: #FFB703;
+    --green: #606C38;
+    --blue: #219EBC;
+    --orange: #FB8500;
+    --dark-green: #283618;
+
+    --heading-font: "Delius", sans-serif;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--paragraph-font);
+}
+
 #events h3, #weather h3, #forecast h3, .adverts h3 {
     background-color: var(--secondary-color);
     color: white;
