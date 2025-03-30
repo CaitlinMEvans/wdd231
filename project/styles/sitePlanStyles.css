@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #ff595e; /* Header background */
+    --secondary-color: #ffb703; /* Footer background */
+    --tertiary-color: #6a4c93; /* purple accent color */
+    /* --accent-color: #ff18701; Highlights */
+    --text-color: #8ac926;
+    --body-bg-color: #49b6ff;
+  }
+
+  body {
+    font-family: 'PT Sans', sans-serif; /* Body */
+}
+
+header h1, h2, h3 {
+    font-family: 'PT Serif', serif; /* Headers */
+}
+
+#logo{
+    margin: 2em;
+}
+
+.emphasis {
+    font-family: 'Delius', sans-serif; /* For emphasis */
+}
+
+h3{
+    color: var(--tertiary-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--accent-color);
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    background-color: #f7f7f7;
+}
+
+aside {
+    padding: 1em;
+}
+
+aside h3 {
+    margin: 1em 0;
+    padding: 0.5em;
+    background-color:  var(--body-bg-color);
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; /* Optional for modern design */
+}
+
+/* Base Styling */
+body {
+    font-family: 'PT Serif', serif; /* Main font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #fff; /* White background */
+    text-align: center;
+    padding: 3em 1em;
+    border: #000 2px solid;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-subheading {
+    font-family: 'Delius', sans-serif;
+    font-size: 1.2rem;
+    color: #ff595e; /* Red color */
+    margin-bottom: 0.5em;
+    margin-bottom: -18px;
+    transform: rotate(-8deg);
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-color: #fff; /* White background */
+    text-align: center;
+    padding: 3em 1em;
+    border: #000 2px solid;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-subheading {
+    font-family: 'Delius', sans-serif;
+    font-size: 1.1rem; /* Slightly larger for better visibility */
+    color: var(--primary-color);
+    margin-bottom: -25px;
+    transform: rotate(-8deg); /* Rotate for style */
+    font-weight: bold;
+    display: inline-block; /* Prevent unexpected line wrapping */
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000; /* Black color */
+    margin: 0 0 1em;
+  }
+  
+  .hero-heading .highlight {
+    color: #ff595e; /* Highlight text with red */
+  }
+  
+  .hero-description {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    color: #333; /* Dark gray */
+    margin: 1em 0 2em;
+    line-height: 1.8;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+  }
+  
+  .btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-primary {
+    background-color: #ff595e;
+    color: white;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: #000; /* Black text */
+    border: 2px solid #000;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #000;
+    color: #FFF;
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,16 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  body.dark-mode a {
+    color: var(--primary-blue);
+  }
+  body.dark-mode header, body.dark-mode footer {
+    background-color: #1e1e1e;
+  }
+  body.dark-mode .testimonial {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="New Venture Therapy - Final Project Booking Page"
+    />
+    <meta name="author" content="Caitlin Evans" />
+    <title>New Venture Therapy - Book Now</title>
+    <link rel="stylesheet" href="styles/nvt_base.css" />
+    <link rel="stylesheet" href="styles/nvt_responsive.css" />
+    <link rel="stylesheet" href="styles/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400&family=PT+Sans:wght@400;700&family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script defer src="scripts/nvt_script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Dynamically Inserted Header -->
+      <div id="header"></div>
+      <main>
+        <section class="appointment-section">
+          <div class="appointment-container">
+            <!-- Left Side -->
+            <div class="appointment-info">
+              <p class="subheading color-green">Ready for a new Venture?</p>
+              <h2 class="heading bg-black">Book an appointment</h2>
+              <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                quam velit, vulputate eu pharetra.
+              </p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <span class="material-icons">call</span>
+                  <div>
+                    <p>Give us a call</p>
+                    <p class="bold">
+                      <a href="tel:+18011234567">(801) 123 - 4567</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-icons">email</span>
+                  <div>
+                    <p>Send us a message</p>
+                    <p class="bold">
+                      <a href="mailto:contact@therapist.com"
+                        >contact@therapist.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  <img src="images/qr.png" alt="QR Code (FAKE)" />
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Side Form -->
+            <div class="appointment-form">
+              <form id="appointmentForm">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="John and Jane Smith"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="YourEmail@domain.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number*</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(801)123-4567"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="schedule">Schedule*</label>
+                  <input
+                    type="text"
+                    id="schedule"
+                    name="schedule Preferences"
+                    placeholder="Ex. Mondays @ 7:00 am, Thursdays @5pm, or Fridays @5pm "
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Leave us a message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Please type your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary bg-green">
+                  Book an Appointment
+                </button>
+                <p>* indicates a required field</p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="faq-section">
+          <div class="content">
+            <p class="subheading color-orange">Everyone has questions -</p>
+            <h2 class="heading">
+              Here are a few <span class="color-orange">FAQs</span> to help you
+              feel at ease.
+            </h2>
+            <div class="accordion">
+              <!-- Dynamic FAQ content will be injected here -->
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn btn-secondary bg-purple color-black"
+                >Still have Questions?</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Book an Appointment Section -->
+        <section>
+          <div class="content">
+            <p class="subheading color-orange">
+              I am where you need me to be -
+            </p>
+            <h2 class="heading">
+              Visit in person or Online <br />
+              <span class="color-orange">tailored</span> to your needs.
+            </h2>
+          </div>
+        </section>
+        <section class="visit-office-section">
+          <div class="visit-office-container">
+            <!-- Left Side - Contact Info -->
+            <div class="visit-info">
+              <!-- <p class="subheading color-black">Lorem Ipsum heading title</p> -->
+              <h2 class="heading">
+                Come and <span class="highlight">visit</span> my office
+              </h2>
+              <p class="description">
+                We invite you to a warm and welcoming space designed for your
+                comfort and privacy. Our office provides a serene atmosphere
+                where you can focus on your healing journey.
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-icons">call</span>
+                  <p><a href="tel:+18011234567">(801) 123 - 4567</a></p>
+                </div>
+                <div class="contact-item">
+                  <span class="material-icons">email</span>
+                  <p>
+                    <a href="mailto:contact@therapist.com"
+                      >contact@therapist.com</a
+                    >
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <span class="material-icons">place</span>
+                  <p>
+                    <a
+                      href="https://www.google.com/maps/search/?q=149W+70th+St,+9000+Los+Angeles,+CA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      149W 70th St, 9000 Los Angeles, CA
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side - Office Image -->
+            <div class="visit-image">
+              <img src="images/diagnosis.webp" alt="Modern therapy office" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Dynamically Inserted Footer -->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
