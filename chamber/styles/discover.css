@@ -15,8 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--paragraph-font);
-}
-#menu {
+}#menu {
     font-size: 1rem;
     border: 0;
     background: none;
@@ -82,6 +81,11 @@ nav ul {
 h2 {
     font-size: 40px;
     /* padding-left: 10px; */
+}
+#events h3, #weather h3, #forecast h3, .adverts h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
 }
 #cards {
     border-top: solid 1px;
