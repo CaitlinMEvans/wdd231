@@ -1,0 +1,12 @@
+#discovery-page {
+    display: grid;
+    grid-template-columns: 600px auto;
+    justify-content: center;
+}
+.discover-column {
+    text-align: center;
+}
+.adverts {
+    text-align: left;
+    max-width: 450px;
+}
