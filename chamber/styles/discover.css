@@ -88,8 +88,12 @@ figure img {
 }
 .adverts {
     text-align: left;
-    max-width: 450px;
+    max-width: 450px;    
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    margin: 15px auto;
 }
+
 
 @media screen and (min-width: 800px) {
     #menu {
