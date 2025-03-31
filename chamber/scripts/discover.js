@@ -37,23 +37,21 @@ if (!lastVisit) {
 
 localStorage.setItem('lastVisit', now);
 
-fetch('../data/discover.json')
+fetch('data/discover.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('discover-cards');
     data.forEach(place => {
       const figure = document.createElement('figure');
-
       figure.innerHTML = `
         <img src="${place.image}" alt="${place.alt}" width="200" height="200" loading="lazy">
         <figcaption>
-            <h4>${place.title}</h4>
-            <p><strong>Address:</strong> ${place.address}</p>
-            <p>${place.description}</p>
-            <button class="learn-more-btn">Learn More</button>
+          <h4>${place.title}</h4>
+          <p><strong>Address:</strong> ${place.address}</p>
+          <p>${place.description}</p>
+          <button class="learn-more-btn">Learn More</button>
         </figcaption>
-        `;
-
+      `;
       container.appendChild(figure);
     });
   })
