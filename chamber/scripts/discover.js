@@ -18,26 +18,43 @@ hamButton.addEventListener('click', () => {
 
 const visit = document.getElementById('visits');
 
-if (localStorage.getItem('lastVisit') == null) {
-    visit.innerHTML = "Welcome! Let us know if you have any questions."
-    localStorage.setItem('lastVisit', new Date());
+const lastVisit = localStorage.getItem('lastVisit');
+const now = Date.now();
+
+if (!lastVisit) {
+    visit.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    const daysPassed = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
+
+    if (daysPassed < 1) {
+        visit.textContent = "Back so soon! Awesome!";
+    } else if (daysPassed === 1) {
+        visit.textContent = `You last visited ${daysPassed} day ago.`;
+    } else {
+        visit.textContent = `You last visited ${daysPassed} days ago.`;
+    }
 }
-else {
-    const lastVisit = new Date(localStorage.getItem('lastVisit'));
-    let currentVisit = new Date();
 
-    let dayDiff = Math.round((currentVisit.getTime() - lastVisit.getTime()) / (1000 * 3600 * 24));
-    // console.log(dayDiff)
+localStorage.setItem('lastVisit', now);
 
-    if (dayDiff <= 0) {
-        visit.innerHTML = "Back so soon! Awesome!";
-    }
-    else if (dayDiff == 1) {
-        visit.innerHTML = `You last visited ${dayDiff} day ago.`;
+fetch('data/discover.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('discover-cards');
+    data.forEach(place => {
+      const figure = document.createElement('figure');
 
-    }
-    else {
-        visit.innerHTML = `You last visited ${dayDiff} days ago.`;
-    }
-    localStorage.setItem('lastVisit', new Date());
-}
+      figure.innerHTML = `
+        <img src="${place.image}" alt="${place.alt}" width="200" height="200" loading="lazy">
+        <figcaption>
+          <h4>${place.title}</h4>
+          <p><strong>Address:</strong> ${place.address}</p>
+          <p>${place.description}</p>
+          <button onclick="location.href='${place.link}'">Learn More</button>
+        </figcaption>
+      `;
+
+      container.appendChild(figure);
+    });
+  })
+  .catch(err => console.error('Error loading discovery data:', err));

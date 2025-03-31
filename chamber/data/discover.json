@@ -1,0 +1,67 @@
+[
+    {
+      "title": "Y Mountain",
+      "image": "images/y-mountain.jpg",
+      "alt": "Image of Y Mountain",
+      "address": "East of BYU Campus, Provo, UT",
+      "description": "A steep trail leading to the giant 'Y' overlooking Provo with scenic valley views.",
+      "link": "#"
+    },
+    {
+      "title": "Bridal Veil Falls",
+      "image": "images/bridal-veil-falls.jpg",
+      "alt": "Image of Bridal Veil Falls",
+      "address": "Provo Canyon, UT-189, Provo, UT",
+      "description": "A stunning double cataract waterfall accessible via a paved path or hike.",
+      "link": "#"
+    },
+    {
+      "title": "Provo Canyon",
+      "image": "images/provo-canyon.jpg",
+      "alt": "Image of Provo Canyon",
+      "address": "Along the Provo River, UT-189",
+      "description": "A scenic drive and recreation area with rafting, hiking, and breathtaking views.",
+      "link": "#"
+    },
+    {
+      "title": "Rock Canyon",
+      "image": "images/rock-canyon.jpg",
+      "alt": "Image of Rock Canyon",
+      "address": "Rock Canyon Trailhead, Provo, UT",
+      "description": "Popular for rock climbing, hiking, and connecting with nature right by the city.",
+      "link": "#"
+    },
+    {
+      "title": "Utah Lake",
+      "image": "images/utah-lake.jpg",
+      "alt": "Image of Utah Lake",
+      "address": "Utah Lake State Park, Provo, UT",
+      "description": "A large freshwater lake great for boating, fishing, and sunset views.",
+      "link": "#"
+    },
+    {
+      "title": "Monte L. Bean Life Science Museum",
+      "image": "images/monte-l-bean-museum.webp",
+      "alt": "Monte L. Bean Life Science Museum",
+      "address": "645 E 1430 N, Provo, UT 84602",
+      "description": "A family-friendly museum with animal exhibits, dioramas, and educational displays.",
+      "link": "#"
+    },
+    {
+      "title": "Provo Pioneer Village",
+      "image": "images/provo-pioneer-village.jpg",
+      "alt": "Provo Pioneer Village",
+      "address": "600 N 500 W, Provo, UT 84601",
+      "description": "Experience pioneer life through restored cabins, artifacts, and blacksmith demos.",
+      "link": "#"
+    },
+    {
+      "title": "BYU Museum of Art",
+      "image": "images/byu-moa.jpg",
+      "alt": "BYU Museum of Art",
+      "address": "North Campus Dr, Provo, UT 84602",
+      "description": "One of the largest and best-attended art museums in the Mountain West.",
+      "link": "#"
+    }
+  ]
+  
