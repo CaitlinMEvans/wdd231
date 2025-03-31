@@ -17,19 +17,16 @@
     font-family: var(--paragraph-font);
 }
 header {
-    background-color: var(--primary-color);
+    background-color: var(--dark-blue);
     color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+    font-family: 'Oswald', sans-serif;
 }
+
 header h1 {
-    font-family: var(--heading-font);
-}
-#logo {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-}
-#location-title {
-    padding: 10px;
+    font-size: 2em;
 }
 #menu {
     font-size: 1rem;
@@ -61,14 +58,6 @@ header h1 {
     text-align: center;
     text-decoration: none;
     color: white;
-}
-.menuLinks a:hover {
-    background-color: #4f4a42;
-    color: #f9fdc4;
-    font-weight: 700;
-}
-.menuLinks .active {
-    color: #cbfdc4;
 }
 nav {
     display: grid;
