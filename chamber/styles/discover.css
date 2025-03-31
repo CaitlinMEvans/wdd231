@@ -216,6 +216,22 @@ figure img {
     max-width: 450px;
 }
 
+.learn-more-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3752c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #263a8f;
+  }
+  
+
 @media screen and (min-width: 800px) {
     #menu {
         display: none;
