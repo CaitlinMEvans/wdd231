@@ -1,6 +1,7 @@
 // Modal Module - Handles modal dialogs throughout the site
 
 let activeModal = null;
+let previouslyFocusedElement = null;
 
 /**
  * Sets up modal functionality
@@ -13,6 +14,8 @@ export function setupModal() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && activeModal) {
       closeModal();
+    } else if (e.key === 'Tab' && activeModal) {
+      trapFocus(e);
     }
   });
 }
@@ -34,7 +37,7 @@ function createModalContainer() {
   modalContainer.innerHTML = `
     <div class="modal-overlay"></div>
     <div class="modal-wrapper">
-      <div class="modal">
+      <div class="modal" role="dialog" aria-modal="true" tabindex="-1">
         <button class="modal-close" aria-label="Close modal">×</button>
         <div class="modal-content"></div>
       </div>
@@ -54,11 +57,16 @@ function createModalContainer() {
 
 /**
  * Opens a modal with the specified content
+ * @param {string} content - HTML content for the modal
+ * @param {string} [className] - Optional class name to add to the modal
  */
 export function openModal(content, className = '') {
   const modalContainer = document.getElementById('modal-container');
   const modalContent = modalContainer.querySelector('.modal-content');
   const modalElement = modalContainer.querySelector('.modal');
+  
+  // Store the currently focused element to restore focus later
+  previouslyFocusedElement = document.activeElement;
   
   // Set the content
   modalContent.innerHTML = content;
@@ -86,8 +94,15 @@ export function openModal(content, className = '') {
   // Prevent scrolling on the body
   document.body.style.overflow = 'hidden';
   
-  // Focus the modal for accessibility
-  modalElement.focus();
+  // Focus the first focusable element (or the modal itself as fallback)
+  setTimeout(() => {
+    const focusableElements = getFocusableElements(modalElement);
+    const firstFocusable = focusableElements.length > 0 ? 
+      focusableElements[0] : 
+      modalElement;
+    
+    firstFocusable.focus();
+  }, 50);
 }
 
 /**
@@ -116,11 +131,72 @@ export function closeModal() {
     
     // Clear active modal reference
     activeModal = null;
+    
+    // Restore focus to the previously focused element
+    if (previouslyFocusedElement) {
+      previouslyFocusedElement.focus();
+    }
   }, 300); // Match this to your CSS transition duration
 }
 
 /**
+ * Gets all focusable elements within a container
+ * @param {HTMLElement} container - The container to search in
+ * @returns {Array} - Array of focusable elements
+ */
+function getFocusableElements(container) {
+  const focusableSelectors = [
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
+    '[tabindex]:not([tabindex="-1"])'
+  ];
+  
+  const elements = container.querySelectorAll(focusableSelectors.join(','));
+  return Array.from(elements).filter(el => {
+    // Filter out hidden elements
+    return el.offsetWidth > 0 && el.offsetHeight > 0;
+  });
+}
+
+/**
+ * Traps focus within the modal when tabbing
+ * @param {Event} e - Keyboard event
+ */
+function trapFocus(e) {
+  if (!activeModal) return;
+  
+  // Get all focusable elements
+  const focusableElements = getFocusableElements(activeModal);
+  
+  // If there are no focusable elements, do nothing
+  if (focusableElements.length === 0) return;
+  
+  // Get first and last focusable elements
+  const firstFocusable = focusableElements[0];
+  const lastFocusable = focusableElements[focusableElements.length - 1];
+  
+  // Handle tab navigation
+  if (e.shiftKey) { // Shift + Tab
+    if (document.activeElement === firstFocusable) {
+      e.preventDefault();
+      lastFocusable.focus();
+    }
+  } else { // Tab
+    if (document.activeElement === lastFocusable) {
+      e.preventDefault();
+      firstFocusable.focus();
+    }
+  }
+}
+
+/**
  * Confirms an action with the user using a modal
+ * @param {string} message - Message to display
+ * @param {Function} onConfirm - Callback function when confirmed
+ * @param {Function} [onCancel] - Optional callback function when canceled
  */
 export function confirmAction(message, onConfirm, onCancel = null) {
   const confirmContent = `
@@ -152,6 +228,11 @@ export function confirmAction(message, onConfirm, onCancel = null) {
         closeModal();
         if (typeof onCancel === 'function') onCancel();
       });
+    }
+    
+    // Focus the confirm button by default
+    if (confirmBtn) {
+      confirmBtn.focus();
     }
   }, 100);
 }

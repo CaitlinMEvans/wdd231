@@ -21,7 +21,7 @@ export async function setupHeader() {
               <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
               <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
               <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
-              <li><a href="#" class="nav-link" data-page="faqs">FAQs</a></li>
+              <li><a href="index.html#FAQ-link" class="nav-link" data-page="faqs">FAQs</a></li>
             </ul>
           </nav>
           <div class="book-now-desktop">
@@ -35,7 +35,7 @@ export async function setupHeader() {
               <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
               <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
               <li><a href="services.html" class="nav-link" data-page="services">Services</a></li>
-              <li><a href="#" class="nav-link" data-page="faqs">FAQs</a></li>
+              <li><a href="index.html#FAQ-link" class="nav-link" data-page="faqs">FAQs</a></li>
               <li class="book-now-mobile">
                 <a href="book.html" class="btn-book-now">Book Now</a>
               </li>
