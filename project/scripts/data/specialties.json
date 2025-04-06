@@ -1,0 +1,76 @@
+{
+    "specialties": [
+      {
+        "id": 1,
+        "name": "Depression",
+        "description": "Depression therapy focuses on alleviating symptoms and addressing underlying causes through evidence-based approaches like cognitive-behavioral therapy and mindfulness practices.",
+        "image": "images/comfort_hands.webp",
+        "color": "blue",
+        "relatedServices": ["Individual Therapy", "Adolescent Therapy"],
+        "techniques": ["Cognitive-Behavioral Therapy", "Mindfulness", "Behavioral Activation", "Interpersonal Therapy"]
+      },
+      {
+        "id": 2,
+        "name": "Stress",
+        "description": "Stress management therapy equips you with practical tools to navigate life's pressures while fostering resilience and developing healthy coping mechanisms for long-term wellbeing.",
+        "image": "images/couple.webp",
+        "color": "yellow",
+        "relatedServices": ["Individual Therapy", "Couple Therapy", "Family Therapy"],
+        "techniques": ["Relaxation Training", "Stress Inoculation", "Time Management", "Boundary Setting"]
+      },
+      {
+        "id": 3,
+        "name": "Abuse",
+        "description": "Abuse recovery therapy provides a safe environment to process trauma, build coping skills, and reclaim your sense of safety, autonomy, and self-worth.",
+        "image": "images/counch_threePeople.webp",
+        "color": "green",
+        "relatedServices": ["Individual Therapy", "Trauma Therapy"],
+        "techniques": ["Trauma-Focused CBT", "EMDR", "Safety Planning", "Empowerment Counseling"]
+      },
+      {
+        "id": 4,
+        "name": "Grief",
+        "description": "Grief counseling supports you through the natural but challenging process of loss, helping you honor your unique grieving journey while finding meaning and a path forward.",
+        "image": "images/individual.jpg",
+        "color": "red",
+        "relatedServices": ["Individual Therapy", "Family Therapy", "Grief Counseling"],
+        "techniques": ["Narrative Therapy", "Meaning Reconstruction", "Continuing Bonds", "Ritual Development"]
+      },
+      {
+        "id": 5,
+        "name": "Divorce",
+        "description": "Divorce therapy helps navigate the emotional, practical, and relational challenges of separation, supporting healthy transitions and co-parenting relationships.",
+        "image": "images/couch_twoPeople.webp",
+        "color": "orange",
+        "relatedServices": ["Individual Therapy", "Family Therapy", "Couple Therapy"],
+        "techniques": ["Co-Parenting Counseling", "Emotional Processing", "Life Transition Planning", "Conflict Resolution"]
+      },
+      {
+        "id": 6,
+        "name": "Children",
+        "description": "Child therapy uses age-appropriate methods like play and art to help young ones express feelings, develop coping skills, and navigate challenges in a supportive environment.",
+        "image": "images/adolecent.webp",
+        "color": "red",
+        "relatedServices": ["Family Therapy", "Adolescent Therapy"],
+        "techniques": ["Play Therapy", "Art Therapy", "Parent-Child Interaction Therapy", "Cognitive-Behavioral Therapy"]
+      },
+      {
+        "id": 7,
+        "name": "Addiction",
+        "description": "Addiction therapy addresses substance and behavioral dependencies through evidenced-based approaches that foster recovery, relapse prevention, and holistic wellness.",
+        "image": "images/diagnosis.webp",
+        "color": "blue",
+        "relatedServices": ["Individual Therapy", "Family Therapy"],
+        "techniques": ["Motivational Interviewing", "Cognitive Behavioral Therapy", "12-Step Facilitation", "Relapse Prevention"]
+      },
+      {
+        "id": 8,
+        "name": "Relationships",
+        "description": "Relationship therapy improves connection, communication, and conflict resolution skills for couples at any stage seeking to strengthen their bond or navigate challenges.",
+        "image": "images/counr_twoPeople_hands.webp",
+        "color": "yellow",
+        "relatedServices": ["Couple Therapy", "Family Therapy"],
+        "techniques": ["Emotionally Focused Therapy", "Gottman Method", "Communication Training", "Attachment-Based Therapy"]
+      }
+    ]
+  }

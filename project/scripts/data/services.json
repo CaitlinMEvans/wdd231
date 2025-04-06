@@ -1,0 +1,100 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "name": "Individual Therapy",
+        "shortDescription": "One-on-one sessions tailored to your unique needs",
+        "fullDescription": "Gain clarity and confidence through one-on-one sessions tailored to your unique needs. Whether you're managing anxiety, depression, or personal growth, individual therapy provides a supportive environment to help you thrive.",
+        "duration": "50 minutes",
+        "price": "$120",
+        "image": "images/individual.jpg",
+        "benefits": [
+          "Personalized treatment plan",
+          "Focused attention on your specific concerns",
+          "Flexible scheduling options",
+          "Confidential and private environment"
+        ],
+        "availability": ["In-person", "Virtual"]
+      },
+      {
+        "id": 2,
+        "name": "Couple Therapy",
+        "shortDescription": "Strengthen your relationship and improve communication",
+        "fullDescription": "Strengthen your bond and improve communication with your partner. Couple therapy focuses on resolving conflicts, building trust, and fostering a deeper connection in your relationship.",
+        "duration": "60 minutes",
+        "price": "$150",
+        "image": "images/couple.webp",
+        "benefits": [
+          "Improved communication skills",
+          "Conflict resolution strategies",
+          "Rebuilding trust and intimacy",
+          "Creating shared goals and values"
+        ],
+        "availability": ["In-person", "Virtual"]
+      },
+      {
+        "id": 3,
+        "name": "Family Therapy",
+        "shortDescription": "Navigate family dynamics and improve understanding",
+        "fullDescription": "Navigate family dynamics and improve understanding among loved ones. Family therapy offers tools to address conflicts, build stronger relationships, and create a harmonious home environment.",
+        "duration": "75 minutes",
+        "price": "$180",
+        "image": "images/multiple.webp",
+        "benefits": [
+          "Improved family communication",
+          "Resolution of ongoing conflicts",
+          "Strengthened family bonds",
+          "Strategies for managing challenging behaviors"
+        ],
+        "availability": ["In-person", "Virtual"]
+      },
+      {
+        "id": 4,
+        "name": "Adolescent Therapy",
+        "shortDescription": "Support for young individuals navigating growth",
+        "fullDescription": "Adolescent therapy helps young individuals navigate growth and self-discovery. It offers a safe space to address emotional challenges, build resilience, and develop essential coping skills tailored to their unique needs.",
+        "duration": "45 minutes",
+        "price": "$110",
+        "image": "images/adolecent.webp",
+        "benefits": [
+          "Age-appropriate coping strategies",
+          "Support for identity development",
+          "Academic and social skill building",
+          "Improved parent-child communication"
+        ],
+        "availability": ["In-person", "Virtual"]
+      },
+      {
+        "id": 5,
+        "name": "Trauma Therapy",
+        "shortDescription": "Specialized support for healing from traumatic experiences",
+        "fullDescription": "Trauma therapy provides specialized support for individuals healing from traumatic experiences. Using evidence-based approaches, this therapy helps process difficult memories, reduce symptoms, and rebuild a sense of safety and control in your life.",
+        "duration": "60 minutes",
+        "price": "$140",
+        "image": "images/counr_twoPeople_hands.webp",
+        "benefits": [
+          "Processing traumatic memories safely",
+          "Reducing symptoms of PTSD and anxiety",
+          "Developing healthy coping strategies",
+          "Rebuilding trust and relationships"
+        ],
+        "availability": ["In-person", "Virtual"]
+      },
+      {
+        "id": 6,
+        "name": "Grief Counseling",
+        "shortDescription": "Support through the grieving process",
+        "fullDescription": "Grief counseling provides compassionate support through the grieving process. Whether you're experiencing loss of a loved one, a relationship, or a significant life change, this therapy offers a safe space to process emotions and find meaning in your experience.",
+        "duration": "60 minutes",
+        "price": "$130",
+        "image": "images/couch_twoPeople.webp",
+        "benefits": [
+          "Processing complex emotions",
+          "Honoring your unique grieving process",
+          "Finding meaning and moving forward",
+          "Building resilience through loss"
+        ],
+        "availability": ["In-person", "Virtual"]
+      }
+    ]
+  }

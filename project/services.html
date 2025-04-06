@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="New Venture Therapy - Therapy Services for Mental Health"
+    />
+    <meta name="author" content="Caitlin Evans" />
+    <title>New Venture Therapy - Services</title>
+    <link rel="stylesheet" href="styles/nvt_base.css" />
+    <link rel="stylesheet" href="styles/nvt_responsive.css" />
+    <link rel="stylesheet" href="styles/dark-mode.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400&family=PT+Sans:wght@400;700&family=Delius&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Dynamically Inserted Header -->
+      <div id="header"></div>
+      <main>
+        <!-- Services Intro Section -->
+        <section>
+          <div class="content">
+            <p class="subheading color-blue">Here to help you feel better</p>
+            <h2 class="heading">
+              Our <span class="color-blue">Services</span> for Mental Wellness
+            </h2>
+            <p class="description">
+              At New Venture Therapy, we offer a range of specialized services
+              designed to address your unique mental health needs. Each service
+              is provided by experienced professionals committed to helping you
+              achieve lasting well-being. Explore our options below to find the
+              right approach for your personal journey.
+            </p>
+
+            <!-- Service Filter Buttons -->
+            <div class="service-filters">
+              <button class="service-filter-button active" data-filter="all">
+                All Services
+              </button>
+              <button class="service-filter-button" data-filter="In-person">
+                In-person Only
+              </button>
+              <button class="service-filter-button" data-filter="Virtual">
+                Virtual Only
+              </button>
+            </div>
+          </div>
+
+          <!-- Services Grid - Dynamically Populated -->
+          <div class="services-grid">
+            <!-- Services cards will be inserted here by JavaScript -->
+          </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="how-it-works">
+          <div class="content">
+            <p class="subheading color-red">Your path to wellness</p>
+            <h2 class="heading">
+              How <span class="color-red">Therapy</span> Works at New Venture
+            </h2>
+            <p class="description">
+              Beginning therapy is a courageous step toward self-improvement.
+              We've designed a straightforward process to support you from the
+              first contact to ongoing sessions.
+            </p>
+          </div>
+
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h3>Initial Contact</h3>
+              <p>
+                Reach out through our booking form, email, or phone. We'll
+                respond within 24 hours to schedule your first appointment.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h3>First Session</h3>
+              <p>
+                Your first session focuses on understanding your needs and
+                goals. We'll discuss your history, current challenges, and what
+                you hope to achieve.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h3>Personalized Plan</h3>
+              <p>
+                Together, we'll develop a customized treatment plan that
+                addresses your specific needs and sets achievable goals for your
+                therapy journey.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h3>Ongoing Sessions</h3>
+              <p>
+                Regular sessions help build momentum. We'll work through
+                challenges, develop new skills, and track your progress toward
+                your goals.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recently Viewed Section -->
+        <section class="recently-viewed-section">
+          <div class="recently-viewed-container">
+            <!-- Will be dynamically populated if there are recently viewed items -->
+          </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="faq-section">
+          <div class="content">
+            <p class="subheading color-purple">Common Questions</p>
+            <h2 class="heading">
+              Frequently Asked <span class="color-purple">Questions</span>
+            </h2>
+            <div class="accordion">
+              <!-- Dynamic FAQ content will be injected here -->
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-container">
+            <div class="cta-image">
+              <img src="images/comfort_hands.webp" alt="Therapy Session" />
+            </div>
+            <div class="cta-content bg-blue">
+              <p class="subheading italic">Ready to get started?</p>
+              <h2 class="heading">Begin your mental wellness journey today</h2>
+              <p>
+                Whether you're seeking support for immediate challenges or
+                long-term growth, we're here to help. Take the first step toward
+                positive change by scheduling your initial consultation.
+              </p>
+              <a href="book.html" class="btn btn-primary bg-black"
+                >Book an Appointment</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Dynamically Inserted Footer -->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+{
+    "faqs": [
+      {
+        "id": 1,
+        "question": "How long does each therapy session last?",
+        "answer": "Session length varies by therapy type: Individual therapy typically lasts 50 minutes, couple therapy 60 minutes, family therapy 75 minutes, and adolescent therapy 45 minutes. We can discuss specific timing needs during your initial consultation.",
+        "category": "Appointments",
+        "dateAdded": "2024-01-05"
+      },
+      {
+        "id": 2,
+        "question": "What payment methods do you accept?",
+        "answer": "We accept major credit cards, HSA/FSA cards, cash, and checks. We also work with many insurance providers as an out-of-network provider and can provide superbills for reimbursement. Payment is due at the time of service.",
+        "category": "Billing",
+        "dateAdded": "2024-01-05"
+      },
+      {
+        "id": 3,
+        "question": "Do you offer virtual/remote appointments?",
+        "answer": "Yes, we provide secure and confidential virtual therapy sessions through a HIPAA-compliant platform. Virtual sessions are available for all therapy types and offer the same quality of care as in-person sessions, with added convenience for those with busy schedules or transportation limitations.",
+        "category": "Appointments",
+        "dateAdded": "2024-01-05"
+      },
+      {
+        "id": 4,
+        "question": "How often will I need to attend therapy?",
+        "answer": "Most clients start with weekly sessions to build momentum in the therapeutic process. As you progress, we may adjust to biweekly or monthly sessions. The frequency depends on your specific needs, goals, and progress, and we'll regularly review this together.",
+        "category": "Treatment",
+        "dateAdded": "2024-02-10"
+      },
+      {
+        "id": 5,
+        "question": "Is everything I say in therapy confidential?",
+        "answer": "Yes, confidentiality is a cornerstone of therapy. Everything discussed remains private with limited exceptions required by law: risk of harm to yourself or others, suspected abuse of children or vulnerable adults, or if required by court order. These limitations will be discussed in detail during your first session.",
+        "category": "Privacy",
+        "dateAdded": "2024-02-10"
+      },
+      {
+        "id": 6,
+        "question": "How long will I need to be in therapy?",
+        "answer": "The duration of therapy varies widely depending on your goals, the complexity of issues, and your engagement in the process. Some clients achieve their goals in 8-12 sessions, while others benefit from longer-term support. We'll regularly assess your progress and adjust our approach accordingly.",
+        "category": "Treatment",
+        "dateAdded": "2024-02-10"
+      },
+      {
+        "id": 7,
+        "question": "What if I need to cancel or reschedule my appointment?",
+        "answer": "We understand that life happens. We request at least 24 hours' notice for cancellations or rescheduling to avoid the full session fee. For emergencies or illness, please contact us as soon as possible, and we'll do our best to accommodate your situation.",
+        "category": "Appointments",
+        "dateAdded": "2024-03-15"
+      },
+      {
+        "id": 8,
+        "question": "Do you prescribe medication?",
+        "answer": "As a licensed therapist, I don't prescribe medication, but I can collaborate with your psychiatrist or primary care physician if medication is part of your treatment plan. If you're interested in exploring medication options, I can provide referrals to trusted psychiatric providers.",
+        "category": "Treatment",
+        "dateAdded": "2024-03-15"
+      },
+      {
+        "id": 9,
+        "question": "Will my insurance cover therapy sessions?",
+        "answer": "We work as an out-of-network provider with many insurance plans. This means you may be able to submit our superbills for partial reimbursement. I recommend contacting your insurance provider directly to inquire about your out-of-network mental health benefits, including deductible, coverage percentage, and session limits.",
+        "category": "Billing",
+        "dateAdded": "2024-04-20"
+      },
+      {
+        "id": 10,
+        "question": "What should I expect in my first session?",
+        "answer": "Your first session is primarily about building rapport and gathering information. We'll discuss what brings you to therapy, your background, goals, and any questions you have. I'll explain how therapy works, confidentiality, and logistics. This initial session helps us create a foundation and treatment plan tailored to your needs.",
+        "category": "Treatment",
+        "dateAdded": "2024-04-20"
+      }
+    ]
+  }

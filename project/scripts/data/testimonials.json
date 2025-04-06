@@ -1,0 +1,58 @@
+{
+    "testimonials": [
+      { 
+        "id": 1,
+        "quote": "Therapy with Amandamae has truly transformed our family dynamics.", 
+        "text": "We used to struggle with communication and unresolved conflicts, but with her guidance, we've learned how to listen, support, and understand each other in ways we never thought possible. Our home feels lighter, more peaceful, and filled with connection again.",
+        "author": "Johnson Family", 
+        "serviceType": "Family Therapy",
+        "rating": 5,
+        "date": "April 2024" 
+      },
+      { 
+        "id": 2,
+        "quote": "I was hesitant about therapy at first, but now I can't imagine my life without it.", 
+        "text": "Amandamae created a safe space where I could process my emotions, work through my anxiety, and develop healthier coping mechanisms. This experience has been life-changing, and I can't recommend her enough!",
+        "author": "M.S.", 
+        "serviceType": "Individual Therapy",
+        "rating": 5,
+        "date": "June 2024" 
+      },
+      { 
+        "id": 3,
+        "quote": "Therapy helped us rebuild trust and improve our communication.", 
+        "text": "We now have the tools to navigate challenges together rather than against each other. Our relationship has never been stronger, and we owe so much of that to this journey!",
+        "author": "M & R.T.", 
+        "serviceType": "Couple Therapy",
+        "rating": 5,
+        "date": "February 2024" 
+      },
+      { 
+        "id": 4,
+        "quote": "Therapy gave my child the confidence to express themselves.", 
+        "text": "They've gone from feeling overwhelmed to embracing their strengths, and I can see such a positive change in their happiness and resilience. As a parent, I couldn't ask for more!",
+        "author": "L.R.", 
+        "serviceType": "Adolescent Therapy",
+        "rating": 5,
+        "date": "December 2023"
+      },
+      {
+        "id": 5,
+        "quote": "Working through my trauma has been life-changing.",
+        "text": "After years of struggling with my past, Amandamae helped me process my experiences in a way that felt safe and empowering. I'm finally able to live more fully in the present without being controlled by my past trauma.",
+        "author": "J.D.",
+        "serviceType": "Trauma Therapy",
+        "rating": 5,
+        "date": "March 2024"
+      },
+      {
+        "id": 6,
+        "quote": "The grief counseling helped me honor my loss while moving forward.",
+        "text": "After losing my partner, I felt completely lost. The compassionate guidance I received helped me navigate the complex emotions of grief without feeling rushed or judged. I've learned that healing isn't about forgetting, but about finding a new way to carry my memories.",
+        "author": "T.W.",
+        "serviceType": "Grief Counseling",
+        "rating": 5,
+        "date": "May 2024"
+      }
+    ]
+  }

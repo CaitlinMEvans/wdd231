@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setupAppointmentForm();
 });
 
-// 🏗️ Insert Header Dynamically
+// Insert Header Dynamically
 function insertHeader() {
     const headerElement = document.getElementById("header");
     if (headerElement) {
@@ -45,7 +45,7 @@ function insertHeader() {
     }
 }
 
-// 🏗️ Insert Footer Dynamically
+// Insert Footer Dynamically
 function insertFooter() {
     const footerElement = document.getElementById("footer");
     if (footerElement) {
@@ -83,7 +83,7 @@ function insertFooter() {
     }
 }
 
-// 🌙 Dark Mode Handling
+// Dark Mode Handling
 function setupDarkMode() {
     const headerLogo = document.getElementById("header-logo");
     const footerLogo = document.getElementById("footer-logo");
@@ -110,7 +110,7 @@ function setupDarkMode() {
     updateLogo(isDarkModeSaved);
 }
 
-// 🖼️ Lazy Loading Images
+// Lazy Loading Images
 function setupLazyLoading() {
     const images = document.querySelectorAll("img");
     if ("IntersectionObserver" in window) {
@@ -136,7 +136,7 @@ function setupLazyLoading() {
     }
 }
 
-// 🍔 Hamburger Menu Toggle
+// Hamburger Menu Toggle
 function setupHamburgerMenu() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navLinksMobile = document.querySelector('.nav-links-mobile');
@@ -148,7 +148,7 @@ function setupHamburgerMenu() {
     }
 }
 
-// 📚 Dynamic FAQs (Reusable)
+// Dynamic FAQs 
 function setupFAQs() {
     const faqContainer = document.querySelector('.accordion');
     if (!faqContainer) return;
@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// ⬆️ Scroll to Top Button
+// Scroll to Top Button
 function setupScrollToTop() {
     const scrollToTopButton = document.createElement('button');
     scrollToTopButton.classList.add('scroll-to-top');
@@ -283,7 +283,7 @@ function setupScrollToTop() {
     });
 }
 
-// 📅 Booking Page Form Submission
+// Booking Page Form Submission
 function setupAppointmentForm() {
     const form = document.getElementById("appointmentForm");
     if (form) {
