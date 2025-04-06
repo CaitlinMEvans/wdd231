@@ -6,7 +6,371 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-color: white;/* 
+  * New Venture Therapy - Responsive Styles
+  * Media queries and responsive adjustments
+  */
+ 
+ /* ===== LARGE SCREENS (1200px and above) ===== */
+ @media (min-width: 1200px) {
+   .container {
+     max-width: 1400px;
+   }
+ }
+ 
+ /* ===== MEDIUM SCREENS (1024px - 1199px) ===== */
+ @media (max-width: 1199px) {
+   .heading {
+     font-size: 2.5rem;
+   }
+   
+   .services-grid,
+   .specialty-container,
+   .process-steps,
+   .recently-viewed-grid {
+     grid-template-columns: repeat(3, 1fr);
+   }
+ }
+ 
+ /* ===== TABLETS (768px - 1023px) ===== */
+ @media (max-width: 1023px) {
+   .heading {
+     font-size: 2.2rem;
+   }
+   
+   .services-grid,
+   .specialty-container,
+   .process-steps,
+   .recently-viewed-grid {
+     grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .appointment-content,
+   .appointment-container,
+   .sec-img-right,
+   .about-container,
+   .visit-office-container {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+   }
+   
+   .content-box {
+     margin-bottom: 1rem;
+   }
+   
+   .image-container {
+     position: relative;
+     width: 100%;
+     height: auto;
+     top: unset;
+     right: unset;
+     margin: 0;
+   }
+   
+   .image-container img {
+     max-width: 100%;
+   }
+   
+   .cta-container {
+     flex-direction: column;
+   }
+   
+   .cta-image {
+     position: initial;
+     margin-right: 0;
+   }
+   
+   .cta-content {
+     margin: 3rem;
+     padding: 2rem;
+   }
+   
+   .about-text {
+     position: initial;
+     z-index: 0;
+     align-self: end;
+     margin-bottom: 0;
+   }
+   
+   .about-images {
+     flex-direction: column;
+     align-items: center;
+   }
+   
+   .image-right {
+     margin-right: 0;
+     width: 100%;
+   }
+   
+   .image-right img {
+     width: 100%;
+     border-radius: 20px;
+   }
+   
+   .experience-container {
+     flex-direction: column;
+   }
+   
+   .experience-header {
+     position: relative;
+     text-align: center;
+   }
+   
+   .specialty-card img {
+     min-height: 300px;
+     max-height: 460px;
+   }
+   
+   .service-modal-content,
+   .specialty-modal-body {
+     grid-template-columns: 1fr;
+   }
+   
+   .service-modal-image,
+   .specialty-modal-image {
+     display: none;
+   }
+ }
+ 
+ /* ===== MOBILE PHONES (480px - 767px) ===== */
+ @media (max-width: 767px) {
+   /* Typography adjustments */
+   .heading {
+     font-size: 1.8rem;
+   }
+   
+   .subheading {
+     font-size: 1rem;
+   }
+   
+   .description {
+     font-size: 0.9rem;
+   }
+   
+   /* Navigation */
+   .nav-wrapper {
+     display: none; /* Hide desktop navigation */
+   }
+   
+   .hamburger-menu {
+     display: flex; /* Show hamburger menu */
+   }
+   
+   .book-now-desktop {
+     display: none; /* Hide desktop CTA */
+   }
+   
+   .nav-links-mobile.active {
+     display: block; /* Show dropdown when active */
+     z-index: 10;
+   }
+   
+   /* Grid adjustments */
+   .services-grid,
+   .specialty-container,
+   .values-container,
+   .recently-viewed-grid,
+   .process-steps {
+     grid-template-columns: 1fr;
+   }
+   
+   .sec-img-right {
+     grid-template-columns: 1fr;
+   }
+   
+   .image-right {
+     margin-top: 2rem;
+     text-align: center;
+   }
+   
+   .image-right img {
+     max-width: 100%;
+   }
+   
+   .service-card img {
+     height: auto;
+   }
+   
+   .testimonial {
+     min-width: 250px;
+   }
+   
+   .footer-info-grid {
+     grid-template-columns: 1fr;
+     gap: 1.5rem;
+   }
+   
+   .buttons {
+     flex-direction: column;
+     gap: 1rem;
+   }
+   
+   .btn {
+     width: 100%;
+     text-align: center;
+   }
+   
+   .appointment-info,
+   .visit-info {
+     text-align: center;
+   }
+   
+   .contact-item {
+     justify-content: center;
+   }
+   
+   .appointment-form {
+     padding: 1.5rem;
+   }
+   
+   .specialty-card img {
+     min-height: 250px;
+   }
+   
+   .overlapping-image {
+     width: 90vw;
+     margin-bottom: -2em;
+   }
+   
+   .overlapping-image img {
+     width: 100%;
+   }
+   
+   .service-info-grid {
+     grid-template-columns: 1fr;
+   }
+   
+   .service-modal-actions,
+   .specialty-modal-actions,
+   .confirmation-actions {
+     flex-direction: column;
+     gap: 1rem;
+   }
+ }
+ 
+ /* ===== SMALL MOBILE PHONES (Below 480px) ===== */
+ @media (max-width: 479px) {
+   body {
+     font-size: 14px;
+   }
+   
+   .heading {
+     font-size: 1.5rem;
+   }
+   
+   .content {
+     padding: 0 1rem;
+   }
+   
+   .logo img {
+     width: 180px;
+   }
+   
+   header {
+     padding: 0.75rem 1rem;
+   }
+   
+   .appointment-form {
+     padding: 1rem;
+   }
+   
+   .appointment-info {
+     padding: 1.5rem;
+   }
+   
+   .appointment-section {
+     padding: 2rem 1rem;
+   }
+   
+   .faq-section {
+     padding: 2rem 1rem;
+   }
+   
+   .accordion-header {
+     font-size: 1rem;
+     padding: 0.75rem 1rem;
+   }
+   
+   .testimonial-quote {
+     font-size: 1.2rem;
+   }
+   
+   .visit-image img {
+     margin-left: 0;
+     margin-top: 0;
+   }
+   
+   .visit-office-section {
+     padding: 2rem 1rem;
+   }
+   
+   .cta-content {
+     margin: 1rem;
+     padding: 1.5rem;
+   }
+   
+   .modal-wrapper {
+     width: 95%;
+   }
+   
+   .modal-content {
+     padding: 1rem;
+   }
+ }
+ 
+ /* ===== DARK MODE SPECIFIC RESPONSIVE ADJUSTMENTS ===== */
+ @media (max-width: 767px) {
+   body.dark-mode .nav-links-mobile {
+     background-color: #1e1e1e;
+   }
+   
+   body.dark-mode .nav-links-mobile li a {
+     color: var(--white);
+   }
+ }
+ 
+ /* ===== PRINT STYLES ===== */
+ @media print {
+   body {
+     background-color: white;
+     color: black;
+     font-size: 12pt;
+   }
+   
+   .hamburger-menu,
+   .nav-links-mobile,
+   .scroll-to-top,
+   .footer-social,
+   .modal-container,
+   video,
+   audio {
+     display: none !important;
+   }
+   
+   a {
+     text-decoration: underline;
+     color: black;
+   }
+   
+   .btn {
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-decoration: none;
+   }
+   
+   .heading {
+     font-size: 18pt;
+     margin-bottom: 10px;
+   }
+   
+   .description {
+     font-size: 10pt;
+   }
+   
+   @page {
+     margin: 2cm;
+   }
+ }
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
