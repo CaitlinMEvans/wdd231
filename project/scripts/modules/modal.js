@@ -57,8 +57,6 @@ function createModalContainer() {
 
 /**
  * Opens a modal with the specified content
- * @param {string} content - HTML content for the modal
- * @param {string} [className] - Optional class name to add to the modal
  */
 export function openModal(content, className = '') {
   const modalContainer = document.getElementById('modal-container');
@@ -141,8 +139,6 @@ export function closeModal() {
 
 /**
  * Gets all focusable elements within a container
- * @param {HTMLElement} container - The container to search in
- * @returns {Array} - Array of focusable elements
  */
 function getFocusableElements(container) {
   const focusableSelectors = [
@@ -163,7 +159,6 @@ function getFocusableElements(container) {
 
 /**
  * Traps focus within the modal when tabbing
- * @param {Event} e - Keyboard event
  */
 function trapFocus(e) {
   if (!activeModal) return;
@@ -194,9 +189,6 @@ function trapFocus(e) {
 
 /**
  * Confirms an action with the user using a modal
- * @param {string} message - Message to display
- * @param {Function} onConfirm - Callback function when confirmed
- * @param {Function} [onCancel] - Optional callback function when canceled
  */
 export function confirmAction(message, onConfirm, onCancel = null) {
   const confirmContent = `
